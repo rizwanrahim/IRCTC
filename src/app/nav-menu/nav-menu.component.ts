@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppConstants } from '../app-constant';
 
 @Component({
   selector: 'nav-menu',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav-menu.component.css'
 })
 export class NavMenuComponent {
-
+  readonly logoPath = AppConstants.LOGO_PATH;
 }
