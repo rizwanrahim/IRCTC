@@ -7,7 +7,7 @@
       (closed)="onClosed()"
       class="side-nav"
     >
-    <button mat-button class="close" (click)="toggle()">X</button>
+    <div class="close-icon" (click)="toggle()">X</div>
     <div style="padding: 5%;">
         <ng-content select="[sidenav-content]"></ng-content>
     </div>
