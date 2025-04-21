@@ -1,0 +1,22 @@
+.example-container {
+    height: 100vh;
+}
+
+.side-nav {
+    width: 35%;
+}
+
+.close {
+    position: absolute;
+    right: 10px;   
+    z-index: 1000;
+    top: 5px;
+    background-color: white!important;
+  }
+
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100%;
+    }
+  }
+

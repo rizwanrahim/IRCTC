@@ -1,0 +1,20 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav
+      position="end"
+      mode="over"
+      [(opened)]="opened"
+      (opened)="onOpened()"
+      (closed)="onClosed()"
+      class="side-nav"
+    >
+    <button mat-button class="close" (click)="toggle()">X</button>
+    <div style="padding: 5%;">
+        <ng-content select="[sidenav-content]"></ng-content>
+    </div>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
