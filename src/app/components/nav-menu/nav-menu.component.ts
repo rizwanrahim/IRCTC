@@ -13,10 +13,9 @@ import { MatMenuModule } from '@angular/material/menu';
   styleUrl: './nav-menu.component.css'
 })
 export class NavMenuComponent {
-  @Output() toggle = new EventEmitter<void>();
+  @Output() menuOption = new EventEmitter<string>();
 
-  toggleSidenav() {
-    console.log("nav menu executed")
-    this.toggle.emit();
+  onMenuClick(menuOption: string) {
+    this.menuOption.emit(menuOption);
   }
 }
