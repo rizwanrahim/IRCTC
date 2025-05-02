@@ -1,6 +1,6 @@
 <side-nav>
   <div sidenav-content>
-    <p>Add the child component here.</p>
+    <train-form *ngIf="activateMenu == 'Train'"></train-form>
   </div>
-  <nav-menu (toggle)="toggleSidenav()"></nav-menu>
+  <nav-menu (menuOption)="onMenuClick($event)"></nav-menu>
 </side-nav>
