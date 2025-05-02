@@ -1,1 +1,18 @@
-<p>train-form works!</p>
+<form [formGroup]="trainForm" (ngSubmit)="onSubmit()" class="train-form">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Train Name</mat-label>
+      <input matInput formControlName="trainName" />
+      <mat-error *ngIf="trainForm.get('trainName')?.touched && trainForm.get('trainName')?.invalid">
+        Train name is required.
+      </mat-error>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit" [disabled]="trainForm.invalid">
+      Save
+    </button>
+  
+    <div *ngIf="submitted" class="success-msg">
+      Form submitted successfully!
+    </div>
+  </form>
+  
