@@ -1,0 +1,14 @@
+.full-width {
+    width: 100%;
+  }
+  
+  .train-form {
+    max-width: 400px;
+    margin: 16px auto;
+  }
+  
+  .success-msg {
+    color: green;
+    margin-top: 10px;
+  }
+  
